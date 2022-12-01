@@ -1,7 +1,12 @@
 import UIKit
 
 class HomeScreen: UIView {
-
+    
+    lazy var backgroundImageView: UIImageView = {
+        let image = UIImageView()
+        return image
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
