@@ -11,7 +11,12 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        screen?.delegate(delegate: self)
     }
     
+}
+
+extension HomeVC: HomeScreenDelegate {
+    func tappedStartButton() {
+    }
 }
