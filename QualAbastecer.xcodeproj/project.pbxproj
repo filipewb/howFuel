@@ -20,12 +20,16 @@
 		8ADD647B293A886200AB6233 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD647A293A886200AB6233 /* CalculatorVC.swift */; };
 		8ADD647E293A899500AB6233 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD647D293A899500AB6233 /* CalculatorScreen.swift */; };
 		8AE66373296CD01C0094B6A5 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE66372296CD01C0094B6A5 /* UIViewController + Extension.swift */; };
+		F8C52141EBAA464995C2B66B /* Pods_QualAbastecer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA8BDF3E414A19AF79CFC72 /* Pods_QualAbastecer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39E2D7AE84789413E4A53271 /* Pods-QualAbastecer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QualAbastecer.debug.xcconfig"; path = "Target Support Files/Pods-QualAbastecer/Pods-QualAbastecer.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA058EE8620349EC2B332DC /* Pods-QualAbastecer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QualAbastecer.release.xcconfig"; path = "Target Support Files/Pods-QualAbastecer/Pods-QualAbastecer.release.xcconfig"; sourceTree = "<group>"; };
 		4FFD6705295495B6001BED1C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		4FFD67082954A699001BED1C /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		4FFD670B2954A6BC001BED1C /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		5FA8BDF3E414A19AF79CFC72 /* Pods_QualAbastecer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QualAbastecer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A59570E2968B580009C4199 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		8A79B5F629394B1A004147F2 /* QualAbastecer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QualAbastecer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A79B5F929394B1A004147F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C52141EBAA464995C2B66B /* Pods_QualAbastecer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21707E5453CBAC1EAD5EFEAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8BDF3E414A19AF79CFC72 /* Pods_QualAbastecer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C16DE8617CBD056AFF14547 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E2D7AE84789413E4A53271 /* Pods-QualAbastecer.debug.xcconfig */,
+				3BA058EE8620349EC2B332DC /* Pods-QualAbastecer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4FFD67042954959C001BED1C /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +113,8 @@
 			children = (
 				8A79B5F829394B1A004147F2 /* QualAbastecer */,
 				8A79B5F729394B1A004147F2 /* Products */,
+				3C16DE8617CBD056AFF14547 /* Pods */,
+				21707E5453CBAC1EAD5EFEAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A79B60A29394B1C004147F2 /* Build configuration list for PBXNativeTarget "QualAbastecer" */;
 			buildPhases = (
+				8E0372E5829183CFD9980174 /* [CP] Check Pods Manifest.lock */,
 				8A79B5F229394B1A004147F2 /* Sources */,
 				8A79B5F329394B1A004147F2 /* Frameworks */,
 				8A79B5F429394B1A004147F2 /* Resources */,
+				F3C9B0E4ADB1A49B6E9CA093 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +243,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E0372E5829183CFD9980174 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QualAbastecer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C9B0E4ADB1A49B6E9CA093 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QualAbastecer/Pods-QualAbastecer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QualAbastecer/Pods-QualAbastecer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QualAbastecer/Pods-QualAbastecer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A79B5F229394B1A004147F2 /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		8A79B60B29394B1C004147F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E2D7AE84789413E4A53271 /* Pods-QualAbastecer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +465,7 @@
 		};
 		8A79B60C29394B1C004147F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA058EE8620349EC2B332DC /* Pods-QualAbastecer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
